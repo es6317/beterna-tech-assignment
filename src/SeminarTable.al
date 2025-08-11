@@ -32,7 +32,6 @@ table 50101 "Seminar"
         {
             Caption = 'Duration (Hours)';
             DataClassification = CustomerContent;
-            Editable = false;
         }
 
         field(6; "Organizer"; Code[20])
@@ -101,19 +100,11 @@ table 50101 "Seminar"
     var
         User: Code[50];
     begin
-        CalcDuration();
         "Last Modified by" := UserId;
     end;
 
     trigger OnInsert()
     begin
-        CalcDuration();
         "Last Modified by" := UserId;
-    end;
-
-    local procedure CalcDuration()
-    begin
-        if ("End" > "Begin") then
-            "Duration (Hours)" := ("End" - "Begin");
     end;
 }

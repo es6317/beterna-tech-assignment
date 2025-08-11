@@ -13,9 +13,9 @@ tableextension 50105 "Sales Line Extension" extends "Sales Line"
                 SeminarRecord: Record Seminar;
             begin
                 if SeminarRecord.Get("Seminar No.") then begin
-                    Rec.Type := Rec.Type::Resource;
-                    Rec."No." := SeminarRecord.Organizer;
-                    Rec."Unit Price" := SeminarRecord.Price;
+                    Rec.Validate(Type, Rec.Type::Resource);
+                    Rec.Validate("No.", SeminarRecord.Organizer);
+                    Rec.Validate("Unit Price", SeminarRecord.Price);
                 end;
             end;
         }

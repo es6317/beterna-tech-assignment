@@ -15,7 +15,7 @@ pageextension 50104 SeminarNavigationExtension extends "Order Processor Role Cen
                 action("New Seminar")
                 {
                     RunPageMode = Create;
-                    Image = New;
+                    Image = Open;
                     ApplicationArea = All;
                     RunObject = Page "Seminar Card Page";
                 }
@@ -26,9 +26,11 @@ pageextension 50104 SeminarNavigationExtension extends "Order Processor Role Cen
         {
             action("New Seminar 2")
             {
+                Caption = 'New Seminar';
                 RunPageMode = Create;
+                Image = New;
                 ApplicationArea = All;
-                RunObject = page "Seminar Card Page";
+                RunObject = Page "Seminar Card Page";
             }
         }
     }

@@ -5,6 +5,7 @@ page 50102 "Seminar List Page"
     ApplicationArea = All;
     UsageCategory = Lists;
     Caption = 'Seminars';
+    CardPageId = "Seminar Card Page";
 
     layout
     {
@@ -26,21 +27,4 @@ page 50102 "Seminar List Page"
             }
         }
     }
-
-    /*actions
-    {
-        area(processing)
-        {
-            action(NewSeminar)
-            {
-                Caption = 'New Seminar';
-                ApplicationArea = All;
-                Image = New;
-                trigger OnAction()
-                begin
-                    PAGE.RunModal(Page::"Seminar Card Page");
-                end;
-            }
-        }
-    }*/
 }

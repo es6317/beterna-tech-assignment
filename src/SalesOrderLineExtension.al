@@ -1,4 +1,4 @@
-pageextension 50111 "Sales Order Lines Extension" extends "Sales Order Subform"
+pageextension 50106 "Sales Order Lines Extension" extends "Sales Order Subform"
 {
     actions
     {
