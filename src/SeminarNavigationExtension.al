@@ -24,7 +24,7 @@ pageextension 50104 SeminarNavigationExtension extends "Order Processor Role Cen
 
         addlast(Creation)
         {
-            action("NewSeminar2")
+            action("New Seminar 2")
             {
                 RunPageMode = Create;
                 ApplicationArea = All;
