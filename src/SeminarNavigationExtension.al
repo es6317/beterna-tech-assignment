@@ -19,6 +19,13 @@ pageextension 50104 SeminarNavigationExtension extends "Order Processor Role Cen
                     ApplicationArea = All;
                     RunObject = Page "Seminar Card Page";
                 }
+
+                action("Seminar Report")
+                {
+                    ApplicationArea = All;
+                    Image = Export;
+                    RunObject = Report "Seminar Report";
+                }
             }
 
             group("Resource Ledgers")

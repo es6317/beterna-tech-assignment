@@ -5,7 +5,6 @@ tableextension 50107 "Resource Ledger Entry Ext" extends "Res. Ledger Entry"
         field(50100; "Seminar No."; Code[20])
         {
             Caption = 'Seminar No.';
-            TableRelation = Seminar;
             DataClassification = CustomerContent;
         }
     }
@@ -18,7 +17,6 @@ tableextension 50108 "Resource Journal Line Ext" extends "Res. Journal Line"
         field(50100; "Seminar No."; Code[20])
         {
             Caption = 'Seminar No.';
-            TableRelation = Seminar;
             DataClassification = CustomerContent;
         }
     }
