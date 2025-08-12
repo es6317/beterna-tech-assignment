@@ -28,8 +28,8 @@ tableextension 50108 "Resource Journal Line Ext" extends "Res. Journal Line"
 
 codeunit 50109 "Sales Post Extension"
 {
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnAfterPostResJnlLine', '', false, false)]
-    local procedure OnAfterPostResJnlLine(SalesHeader: Record "Sales Header"; SalesLine: Record "Sales Line"; JobTaskSalesLine: Record "Sales Line"; ResJnlLine: Record "Res. Journal Line")
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnPostResJnlLineOnAfterInit', '', false, false)]
+    local procedure OnPostResJnlLineOnAfterInit(ResJnlLine: Record "Res. Journal Line"; SalesLine: Record "Sales Line")
     begin
         ResJnlLine."Seminar No." := SalesLine."Seminar No.";
     end;
