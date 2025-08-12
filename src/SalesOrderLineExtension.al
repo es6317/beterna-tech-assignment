@@ -1,5 +1,16 @@
 pageextension 50106 "Sales Order Lines Extension" extends "Sales Order Subform"
 {
+    layout
+    {
+        addlast(Control1)
+        {
+            field("Seminar No."; Rec."Seminar No.")
+            {
+                ApplicationArea = All;
+            }
+        }
+    }
+
     actions
     {
         addlast(Processing)
